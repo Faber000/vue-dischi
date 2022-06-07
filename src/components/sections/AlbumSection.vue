@@ -1,8 +1,8 @@
 <template>
     <section>
         <div class="container">
-            <div class="row d-flex justify-content-center align-items-center">
-                <CardAlbum class="col my-3" v-for="album in albums" :key="album.title" :album="album"/>
+            <div class="row">
+                <CardAlbum class="col my-1" v-for="album in albums" :key="album.title" :album="album"/>
             </div>
         </div>
     </section>
@@ -40,4 +40,8 @@
 
 <style lang="scss" scoped>
 
+.container {
+    padding: 50px;
+    margin: auto;
+}
 </style>
